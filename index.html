@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/estilos.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body >
+        <nav class="nav-extended cyan darken-3 right">
+         <!-- <div class="nav-wrapper">
+            <a href="#" class="brand-logo"><span id="titulo_equipo"></span></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="sass.html">Clientes</a></li>
+              <li><a href="badges.html">Components</a></li>
+              <li><a href="collapsible.html">JavaScript</a></li>
+            </ul>
+          </div>-->
+          <div class="nav-content">
+
+            <ul class="tabs tabs-transparent">
+              <li class="tab"><a class="active" href="#test1"><i class="material-icons">person</i></a></li>
+              <li class="tab"><a href="#test2"><i class="material-icons">assignment</i></a></li>
+             <!-- <li class="tab"><a href="#test3">DISCO</a></li>
+              <li class="tab"><a href="#test4">TRAFICO</a></li>-->
+            </ul>
+
+          </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
+
+        <div id="mostrar">---</div>
+        
+    <div class="container-fluid" style="margin-right: 20px;margin-left: 20px;">     
+     
+      <div class="section"> 
+
+        <div id="test1" class="col s12">
+
+           <!--row-->
+           <div class="row">
+              <!--col-->
+
+              <div class="col s12 m12 l12">
+                  <div class="card">
+                      <div class="card-content black-text center">
+                          <font style="font-size: 20px;">CLIENTES</font></div>
+                      </div>
+                  </div>
+
+              <div class="col s12 m12 l12">
+                <ul class="collapsible">
+                    <li>
+                      <div class="collapsible-header"><b id="codigo">C001</b>-<font color="#565656"></font><var id="cliente">JUGOS DEL SUR SA</var></font></div>
+                      <div class="collapsible-body">
+                        <span>
+                          Domicilio: <b> Av. Perito Moreno</b><br>
+                          Localidad: <b> Allen</b><br>
+                          Provincia: <b>Río Negro</b> <br>
+                          Cod. Postal: <b>8328 </b><br>
+                          Contacto: <b>Ignacio Mendez</b> <br>
+                          <br>
+                          <a onclick="agregar_cliente();" style="width:100%" class="waves-effect waves-light btn btn-small cyan darken-3">Informes</a>
+                          <a style="width:100%; margin-top: 10px" href="#modal2" class="waves-effect waves-light btn btn-small cyan darken-3 modal-trigger">Nuevo informe</a>
+                          <br><br>
+                        </span>
+                      </div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header"><b id="codigo">C002</b>-<font color="#565656"></font><var id="cliente">SEMANTEC S.R.L.</var></font></div>
+                        <div class="collapsible-body">
+                          <span>
+                            Domicilio: <b> Av. Perito Moreno</b><br>
+                            Localidad: <b> Allen</b><br>
+                            Provincia: <b>Río Negro</b> <br>
+                            Cod. Postal: <b>8328 </b><br>
+                            Contacto: <b>Ignacio Mendez</b> <br>
+                            <br>
+                            <a onclick="agregar_cliente();" style="width:100%" class="waves-effect waves-light btn btn-small cyan darken-3">Informes</a>
+                            <a style="width:100%; margin-top: 10px" href="#modal2" class="waves-effect waves-light btn btn-small cyan darken-3 modal-trigger">Nuevo informe</a>
+                            <br><br>
+                          </span>
+                        </div>
+                      </li>
+
+                      <li>
+                      <div class="collapsible-header"><b id="codigo">C003</b>-<font color="#565656"></font><var id="cliente">TECPETROL</var></font></div>
+                      <div class="collapsible-body">
+                        <span>
+                          Domicilio: <b> Av. Perito Moreno</b><br>
+                          Localidad: <b> Allen</b><br>
+                          Provincia: <b>Río Negro</b> <br>
+                          Cod. Postal: <b>8328 </b><br>
+                          Contacto: <b>Ignacio Mendez</b> <br>
+                          <br>
+                          <a onclick="agregar_cliente();" style="width:100%" class="waves-effect waves-light btn btn-small cyan darken-3">Informes</a>
+                          <a style="width:100%; margin-top: 10px" href="#modal2" class="waves-effect waves-light btn btn-small cyan darken-3 modal-trigger">Nuevo informe</a>
+                          <br><br>
+                        </span>
+                      </div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header"><b id="codigo">C004</b>-<font color="#565656"></font><var id="cliente">TORNERIA ALLEMANNI</var></font></div>
+                        <div class="collapsible-body">
+                          <span>
+                            Domicilio: <b> Av. Perito Moreno</b><br>
+                            Localidad: <b> Allen</b><br>
+                            Provincia: <b>Río Negro</b> <br>
+                            Cod. Postal: <b>8328 </b><br>
+                            Contacto: <b>Ignacio Mendez</b> <br>
+                            <br>
+                            <a onclick="agregar_cliente();" style="width:100%" class="waves-effect waves-light btn btn-small cyan darken-3">Informes</a>
+                            <a style="width:100%; margin-top: 10px" href="#modal2" class="waves-effect waves-light btn btn-small cyan darken-3 modal-trigger">Nuevo informe</a>
+                            <br><br>
+                          </span>
+                        </div>
+                      </li>
+
+                      <li>
+                          <div class="collapsible-header"><b id="codigo">C005</b>-<font color="#565656"></font><var id="cliente">CASTIGLIONI Hnos</var></font></div>
+                          <div class="collapsible-body">
+                            <span>
+                              Domicilio: <b> Av. Perito Moreno</b><br>
+                              Localidad: <b> Allen</b><br>
+                              Provincia: <b>Río Negro</b> <br>
+                              Cod. Postal: <b>8328 </b><br>
+                              Contacto: <b>Ignacio Mendez</b> <br>
+                              <br>
+                              <a onclick="agregar_cliente();" style="width:100%" class="waves-effect waves-light btn btn-small cyan darken-3">Informes</a>
+                              <a style="width:100%; margin-top: 10px" href="#modal2" class="waves-effect waves-light btn btn-small cyan darken-3 modal-trigger">Nuevo informe</a>
+                              <br><br>
+                            </span>
+                          </div>
+                        </li>
+
+                        <li>
+                            <div class="collapsible-header"><b id="codigo">C006</b>-<font color="#565656"></font><var id="cliente">OILSTONE</var></font></div>
+                            <div class="collapsible-body">
+                              <span>
+                                Domicilio: <b> Av. Perito Moreno</b><br>
+                                Localidad: <b> Allen</b><br>
+                                Provincia: <b>Río Negro</b> <br>
+                                Cod. Postal: <b>8328 </b><br>
+                                Contacto: <b>Ignacio Mendez</b> <br>
+                                <br>
+                                <a onclick="agregar_cliente();" style="width:100%" class="waves-effect waves-light btn btn-small cyan darken-3">Informes</a>
+                                <a style="width:100%; margin-top: 10px" href="#modal2" class="waves-effect waves-light btn btn-small cyan darken-3 modal-trigger">Nuevo informe</a>
+                                <br><br>
+                              </span>
+                            </div>
+                          </li>                  
+
+                  </ul>
+          
+               
+
+              </div><!--fin col-->
+          
+           </div><!--fin row-->
+
+      
+    <!-- boton flotante Cliente-->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red modal-trigger" href="#modal1">
+          <i class="large material-icons">add</i>
+        </a>
+  </div>
+
+        </div><!--fin test1-->
+
+
+        <div id="test2" class="col s12">
+
+             <!--row1-->
+             <div class="row">
+
+                <div class="col s12 m12 l12">
+                    <div class="card">
+                        <div class="card-content black-text center">
+                            <font style="font-size: 20px;">(LIQUIDOS PENETRANTES)</font><br>
+                            <b id="infcodigo">C001</b>-<var id="infcliente">JUGOS DEL SUR SA</var><br>
+                            <i style="color: red;">Informe Incompleto</i>
+                         </div>
+                        </div>
+                    </div>
+
+               <!--col0-->
+               <div class="col s12 m12 l12">
+	
+                  <div class="card">
+                    <div class="card-content">
+
+                          <span class="card-title-">
+                            
+                              <a onclick="salvar(1)" class="btn-floating btn-medium waves-effect waves-light cyan darken-3 right">
+                                  <i class="material-icons">save</i>
+                              </a>
+                              <i id="n1" class="material-icons notif">priority_high</i>
+                              
+                          </span>
+
+                          <div class="input-field">
+                              <input id="vc" type="text" class="1">
+                              <label for="vc">INFORME N°:</label>
+                          </div>
+                          <div class="input-field">
+                              <input id="bb" type="text" class="1 datepicker">
+                              <label for="bb">FECHA:</label>
+                          </div>
+                          <div class="input-field">
+                              <input id="infLug" type="text" class="1">
+                              <label for="infLug">LUGAR:</label>
+                          </div>     
+                          <div class="input-field">
+                              <input id="infLugh" type="text" class="1">
+                              <label for="infLugh">RYC-ODS:</label>
+                          </div>                 
+
+                    </div>
+                  </div>
+                  
+                </div>
+                <!--fin col0-->
+
+
+                <!--col1-->
+                <div class="col s12 m12 l12">
+	
+                  <div class="card">
+                    <div class="card-content">
+
+                          <span class="card-title-">
+                              <a onclick="salvar(2)" class="btn-floating btn-medium waves-effect waves-light cyan darken-3 right">
+                                  <i class="material-icons">save</i>
+                              </a>
+                              <i id="n2" class="material-icons notif">priority_high</i>
+                          </span>
+                    
+                          <div class="input-field">
+                              <input id="lpTipo" type="text" class="2">
+                              <label for="lpTipo">LIQ. PENET. TIPO: </label>
+                          </div>
+                          <div class="input-field">
+                              <input id="lpMarca" type="text" class="2">
+                              <label for="lpMarca">MARCA</label>
+                          </div>
+                          <div class="input-field">
+                              <input id="lpLote" type="text" class="2">
+                              <label for="lpLote">LOTE</label>
+                          </div>
+                          <div class="input-field">
+                              <input id="lpVto" type="text" class="2 datepicker" autocomplete="false">
+                              <label for="lpVto">VENCIMIENTO</label>
+                          </div>
+
+                    </div>
+                  </div>
+                  
+                </div>
+                <!--fin col1-->
+
+                <!--col2-->
+                <div class="col s12 m12 l12">
+
+                  <div class="card">
+                    <div class="card-content">
+                      <span class="card-title-">
+                              <a onclick="salvar(3)" class="btn-floating btn-medium waves-effect waves-light cyan darken-3 right">
+                                  <i class="material-icons">save</i>
+                              </a>
+                              <i id="n3" class="material-icons notif">priority_high</i>
+                      </span>
+                      
+                        <div class="input-field">
+                            <input id="revTipo" type="text" class="3">
+                            <label for="revTipo">REVELADOR TIPO</label>
+                        </div>
+            
+                        <div class="input-field">
+                            <input id="revMarca" type="text" class="3">
+                            <label for="revMarca">MARCA</label>
+                        </div>
+            
+                        <div class="input-field">
+                            <input id="revLote" type="text" class="3">
+                            <label for="revLote">LOTE</label>
+                        </div>
+            
+                        <div class="input-field">
+                            <input id="revVto" type="text" class="3 datepicker">
+                            <label for="revVto">VENCIMIENTO</label>
+                        </div>
+
+                    </div>
+                  </div>
+                  
+                </div>
+                <!--fin col2-->
+
+                <!--col3-->
+                <div class="col s12 m12 l12">
+
+                    <div class="card">
+                      <div class="card-content">
+                        <span class="card-title-">
+                                <a onclick="salvar(4)" class="btn-floating btn-medium waves-effect waves-light cyan darken-3 right">
+                                    <i class="material-icons">save</i>
+                                </a>
+                                <i id="n4" class="material-icons notif">priority_high</i>
+                        </span>
+                        
+                        <div class="input-field">
+                            <input id="lampUv" type="text" class="4">
+                            <label for="lampUv">LAMPARA UV</label>
+                        </div>
+                    
+                        <div class="input-field">
+                            <input id="lampUvSerie" type="text" class="4">
+                            <label for="lampUvSerie">N° SERIE</label>
+                        </div>
+                    
+                        <div class="input-field">
+                            <input id="lampUvCod" type="text" class="4">
+                            <label for="lampUvCod">CÓDIGO</label>
+                        </div>
+                    
+                        <div class="input-field">
+                            <input id="lampFeCal" type="text" class="4 datepicker">
+                            <label for="lampFeCal">FECHA DE CALIBRACIÓN</label>
+                        </div>
+                    
+                        <div class="input-field">
+                            <input id="trescuartos" type="text" class="4 datepicker">
+                            <label for="trescuartos">VENCIMIENTO</label>
+                        </div>
+
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <!--fin col3-->
+
+                  <!--col4-->
+                  <div class="col s12 m12 l12">
+
+                      <div class="card">
+                        <div class="card-content">
+                          <span class="card-title-">
+                                  <a onclick="salvar(5)" class="btn-floating btn-medium waves-effect waves-light cyan darken-3 right">
+                                      <i class="material-icons">save</i>
+                                  </a>
+                                  <i id="n5" class="material-icons notif">priority_high</i>
+                          </span>
+      
+                          <div class="input-field">
+                              <input id="medLuz" type="text" class="5">
+                              <label for="medLuz">MEDIDOR DE INT. DE LUZ</label>
+                          </div>
+                      
+                          <div class="input-field">
+                              <input id="medLuzSerie" type="text" class="5">
+                              <label for="medLuzSerie">N° SERIE</label>
+                          </div>
+                      
+                          <div class="input-field">
+                              <input id="medLuzCod" type="text" class="5">
+                              <label for="medLuzCod">CÓDIGO</label>
+                          </div>
+                      
+                          <div class="input-field">
+                              <input id="medLuzFeCal" type="text" class="5 datepicker">
+                              <label for="medLuzFeCal">FECHA DE CALIBRACIÓN</label>
+                          </div>
+                      
+                          <div class="input-field">
+                              <input id="medLuzVto" type="text" class="5 datepicker">
+                              <label for="medLuzVto">VENCIMIENTO</label>
+                          </div>                      
+
+
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <!--fin col4-->
+                    <div class="col s12 m12 l12">
+                        <div class="card">
+                            <div class="card-content black-text center">
+                              CONDICIONES DE ENSAYO</div>
+                            </div>
+                        </div>
+                    <!--col5-->
+                    <div class="col s12 m12 l6">
+
+                        <div class="card">
+                          <div class="card-content">
+                            <span class="card-title-">
+                                    <a onclick="salvar(6)" class="btn-floating btn-medium waves-effect waves-light cyan darken-3 right">
+                                        <i class="material-icons">save</i>
+                                    </a>
+                                    <i id="n6" class="material-icons notif">priority_high</i>
+                            </span>
+                            
+                            <div class="input-field">
+                                <input id="a6" type="text" class="6">
+                                <label for="a6">ALCANCE DE ENSAYO</label>
+                            </div>
+                        
+                            <div class="input-field">
+                                <input id="b6" type="text" class="6">
+                                <label for="b6">PROCEDIMIENTO</label>
+                            </div>
+                            
+                            <div class="row">
+
+                              <div class="col m4 l4 s6">
+                                  <label>
+                                    <input type="checkbox" class="6 filled-in"/>
+                                    <span>ARMADO</span>
+                                  </label>
+                              </div>
+
+                              <div class="col m4 l4 s6">
+                                  <label>
+                                    <input type="checkbox" class="6 filled-in" />
+                                    <span>DESARMADO</span>
+                                  </label>
+                              </div>
+
+                              <div class="col m4 l4 s6">
+                                  <label>
+                                    <input type="checkbox" class="6 filled-in" />
+                                    <span>LIMPIEZA</span>
+                                  </label>
+                              </div>
+
+                              <div class="col m4 l4 s6">
+                                  <label>
+                                    <input type="checkbox" class="6 filled-in" />
+                                    <span>ARENADO</span>
+                                  </label>
+                              </div>
+
+                              <div class="col m4 l4 s6">
+                                  <label>
+                                    <input type="checkbox" class="6 filled-in" />
+                                    <span>MECÁNICO</span>
+                                  </label>
+                              </div>
+
+                              <div class="col m4 l4 s6">
+                                  <label>
+                                    <input type="checkbox" class="6 filled-in" />
+                                    <span>DESENGRASADO</span>
+                                  </label>
+                              </div>
+
+                            </div>
+
+
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <!--fin col5-->
+
+                      <!--col6-->
+                      <div class="col s12 m12 l12">
+
+                          <div class="card">
+                            <div class="card-content">
+                              <span class="card-title-">
+                                      <a onclick="salvar(7)" class="btn-floating btn-medium waves-effect waves-light cyan darken-3 right">
+                                          <i class="material-icons">save</i>
+                                      </a>
+                                      <i id="n7" class="material-icons notif">priority_high</i>
+                              </span>
+
+                              <div class="input-field">
+                                  <input id="b8" type="text" class="7">
+                                  <label for="b8">MEDICIÓN DE LUZ VISIBLE</label>
+                              </div>
+                          
+                              <div class="input-field">
+                                      <input id="bb8" type="text" class="7">
+                                      <label for="bb8">Min:</label>
+                              </div>
+                              <div class="input-field">
+                                      <input id="bc8" type="text" class="7">
+                                      <label for="bc8">Max:</label>
+                              </div>
+
+
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <!--fin col6-->
+
+                        <!--col7-->
+                        <div class="col s12 m12 l12">
+
+                            <div class="card">
+                              <div class="card-content">
+                                <span class="card-title-">
+                                        <a onclick="salvar(8)" class="btn-floating btn-medium waves-effect waves-light cyan darken-3 right">
+                                            <i class="material-icons">save</i>
+                                        </a>
+                                        <i id="n8" class="material-icons notif">priority_high</i>
+                                </span>
+
+                                <div class="input-field">
+                                    <input id="b9" type="text" class="8">
+                                    <label for="b9">MEDICIÓN DE LUZ UV</label>
+                                </div>
+                            
+                                <div class="input-field">
+                                        <input id="b9" type="text" class="8">
+                                        <label for="b9">Min:</label>
+                                </div>
+                                <div class="input-field">
+                                        <input id="b9" type="text" class="8">
+                                        <label for="b9">Max:</label>
+                                </div>
+
+
+                              </div>
+                            </div>
+                            
+                          </div>
+                          <!--fin col7-->
+
+                          <!--col8-->
+                          <div class="col s12 m12 l12">
+
+                              <div class="card">
+                                <div class="card-content">
+                                  <span class="card-title-">
+                                          <a onclick="salvar(9)" class="btn-floating btn-medium waves-effect waves-light cyan darken-3 right">
+                                              <i class="material-icons">save</i>
+                                          </a>
+                                          <i id="n9" class="material-icons notif">priority_high</i>
+                                  </span>
+
+                                  <div class="input-field">
+                                      <input id="b10" type="text" class="9">
+                                      <label for="b2">TEMPERATURA</label>
+                                  </div>
+                              
+                                  <div class="input-field">
+                                          <input id="b10" type="text" class="9">
+                                          <label for="b10">Min:</label>
+                                  </div>
+                                  <div class="input-field">
+                                          <input id="b10" type="text" class="9">
+                                          <label for="b10">Max:</label>
+                                  </div>
+
+
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <!--fin col8-->
+
+                            <!--col9-->
+                            <div class="col s12 m12 l12">
+
+                                <div class="card">
+                                  <div class="card-content">
+                                    <span class="card-title-">
+                                            <a onclick="salvar(10)" class="btn-floating btn-medium waves-effect waves-light cyan darken-3 right">
+                                                <i class="material-icons">save</i>
+                                            </a>
+                                            <i id="n10" class="material-icons notif">priority_high</i>
+                                    </span>
+
+                                    <span class="card-title black-text">APLICACIÓN DE LP</span>
+    
+                                    <div class="input-field">
+                                        <input id="b11" type="text" class="10">
+                                        <label for="b11">Pincel:</label>
+                                    </div>
+                                
+                                    <div class="input-field">
+                                            <input id="b1b" type="text" class="10">
+                                            <label for="b1b">Aerosol:</label>
+                                    </div>
+                                    <div class="input-field">
+                                            <input id="b2b" type="text" class="10">
+                                            <label for="b2b">Tiempo:</label>
+                                    </div>
+
+
+                                  </div>
+                                </div>
+                                
+                              </div>
+                              <!--fin col9-->
+
+                              <!--col10-->
+                              <div class="col s12 m12 l12">
+
+                                  <div class="card">
+                                    <div class="card-content">
+                                      <span class="card-title-">
+                                              <a onclick="salvar(11)" class="btn-floating btn-medium waves-effect waves-light cyan darken-3 right">
+                                                  <i class="material-icons">save</i>
+                                              </a>
+                                              <i id="n11" class="material-icons notif">priority_high</i>
+                                      </span>
+
+                                      <div class="input-field">
+                                          <input id="b124" type="text" class="11">
+                                          <label for="b124">REMOCIÓN DE LP</label>
+                                      </div>
+  
+                                      <div class="input-field">
+                                          <input id="c12" type="text" class="11">
+                                          <label for="c12">SECADO INTERMEDIO</label>
+                                      </div>
+  
+                                      <div class="input-field">
+                                          <input id="d12" type="text" class="11">
+                                          <label for="d12">APLICACIÓN DE REVELADOR</label>
+                                      </div>
+  
+                                      <div class="input-field">
+                                          <input id="e12" type="text" class="11">
+                                          <label for="e12">LIMPIEZA FINAL</label>
+                                      </div>                         
+
+
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                                <!--fin col10-->
+
+              </div><!--fin row1-->
+
+        </div><!---->
+
+
+     <!--   <div id="test3" class="col s12">Test 3</div>
+        <div id="test4" class="col s12">Test 4</div>-->
+      
+      </div>
+    </div>
+
+
+
+    <!-- ventana flotante nuevo cliente -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h5 align="center"><i class="material-icons">person</i> Nuevo Cliente</h5>
+
+        <div class="row">
+          <form class="col s12">
+              
+                <div class="input-field">
+                    <input id="dfdf" type="text" class="1">
+                    <label for="dfdf">CÓDIGO:</label>
+                </div>
+                <div class="input-field">
+                    <input id="vc" type="text" class="1">
+                    <label for="vc">NOMBRE:</label>
+                </div>
+                <div class="input-field">
+                    <input id="vcd" type="text" class="1">
+                    <label for="vcd">DOMICILIO:</label>
+                </div>
+                <div class="input-field">
+                    <input id="vcr" type="text" class="1">
+                    <label for="vcr">LOCALIDAD:</label>
+                </div>
+                <div class="input-field">
+                    <input id="vc" type="text" class="1">
+                    <label for="vc">PROVINCIA:</label>
+                </div>
+                <div class="input-field">
+                    <input id="vc" type="text" class="1">
+                    <label for="vc">C.POSTAL:</label>
+                </div>
+                <div class="input-field">
+                    <input id="vc" type="text" class="1">
+                    <label for="vc">CONTACTO:</label>
+                </div>
+                <div class="input-field">
+                    <input id="vc" type="text" class="1">
+                    <label for="vc">CARGO:</label>
+                </div>
+
+          </form>
+          <a style="width:100%;" onclick="agregar_cliente()" class="waves-effect waves-light btn cyan darken-3">Agregar</a>
+        </div>
+
+       <!-- <ul id="lista_equipos" class="collection"></ul>-->
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>
+    </div><!--Fin nuevo cliente flotante-->
+
+
+
+
+    <!-- ventana flotante para nuevo informe-->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+         <h6 align="center">Nuevo informe para:<br><b id="codigo">CÓDIGO</b>-<var id="cliente">CLIENTE</var></h6>
+  
+          <div class="row">
+            <form class="col s12">
+                <form action="#">
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Liquidos penetrantes</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" disabled />
+                        <span>Particulas magnetizables</span>
+                      </label>
+                    </p>
+                  </form>
+            </form>
+            <a  onclick="tabla()" style="width:100%;" class="waves-effect waves-light btn cyan darken-3">CREAR INFORME</a>
+          </div>
+  
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:void(0)" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+        </div>
+      </div>
+    <!---->
+      
+
+    <script src="js/jquery.min-3.2.1.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/dexie.js"></script>
+    <script src="js/funciones.js"></script>
+
+      <script type="text/javascript">
+ 
+        var codigo = '';
+        var cliente = '';
+
+        $(".collapsible-header").click(function (event) {
+          codigo = $(this).find('#codigo').html();
+          cliente = $(this).find('#cliente').html();
+      });
+
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+          $('.datepicker').datepicker({
+              format: 'dd/mm/yyyy',
+              autoClose:true
+          });
+
+           listar();
+
+      });
+
+
+      function salvar(x){
+
+        agregarDatos();
+
+        M.toast({html: 'Información ' + x + ' guardada', classes: ''});
+   
+        $("#n" + x).hide();
+    }
+
+
+
+     $("input").on("change keyup", function(){
+        var n = $(this).attr("class");
+        var v = n.substr(0,2);
+        $("#n" + v).show();
+        
+        });
+
+        function tabla(){
+          $('.tabs').tabs('select','test2');
+          $('#infcodigo').html(codigo);
+          $('#infcliente').html(cliente);
+          $('#modal2').modal('close');
+        }
+
+        function agregar_cliente(){
+          alert("FUNCIONALIDAD EN DESARROLLO...");
+        }
+
+        
+
+
+      </script>
+
+
+    </body>
+  </html>

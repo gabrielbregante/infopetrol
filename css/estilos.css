@@ -1,0 +1,39 @@
+
+
+body{
+    background: #34495e;
+}
+
+.container-fluid{
+    padding-top: 50px;
+}
+
+.collapsible-body{
+    background-color:white;
+}
+
+.notif{
+    margin-right: 5px;
+    float: right;
+    color: red;
+    display: none;
+    font-size: 38px;
+}
+
+.collapsible-header{
+    font-size: 16px;
+}
+
+.card-content {
+    font-size: 16px;
+}
+
+.datepicker-table td.is-selected{
+    color:#999 !important;
+  }
+
+  #mostrar{
+      font-size: 20px; color: white;
+  }
+
+
